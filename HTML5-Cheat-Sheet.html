@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML5 Cheat Sheet</title>
+    </head>
+    <body>
+        <!-- Headings -->
+        <header style="border: 2px solid red; margin-bottom: 1px;">
+            <h1>My website about HTML5!</h1>
+            <h3>This is my cheat sheet</h3>
+            <p>Use h1 for the most important title on your site and maybe h3 to your subtitle!</p>
+            <nav>
+                <a href="#basichtml">Basic HTML</a> |                  
+                <a href="#addingtext">Adding Text</a> |                  
+                <a href="#formattingtext">Formatting Text</a> |
+                <a href="#comments">Comments</a> |
+                <a href="#semantics">Semantics</a> |
+                <a href="#lists">Lists</a> |
+                <a href="#tables">Tables</a> |
+                <a href="#images">Images</a> |
+                <a href="#audioandvideo">Audio and Video</a> |
+                <a href="#links">Links</a> |
+                <a href="#forms">Forms</a> |
+                <a href="#frames">Frames</a> |
+                <a href="#style">Style</a> |
+                <a href="#programming">Programming</a>
+            </nav>
+            <p style="color:red"><b>&lt;header></b></p>
+        </header>
+        <hr><hr>
+        <main  style="border: 2px solid greenyellow">
+            <section id="basichtml" style="border: 2px solid blue; margin: 1px 1px;">
+                <h2>Basic HTML</h2>
+                <p>The &lt;!DOCTYPE html> declaration must be the very first thing in your HTML document, before the <html> tag. It is an instruction to the web browser about what version of HTML the page using. </p>
+                <p>The &lt;html> tag will be openned right after the doctype declaration. This tag tells the browser that this is an HTML document, it represents the root of an HTML document. The &lt;html> tag is the container for all other HTML elements, except for the &lt;!DOCTYPE> declaration. You can add the lang attribute, lang stands for language, to this tag to define the language of this page. Like so: &lt;html lang="en">, where en stands for english.</p>
+                <p>Right after openning the &lt;html> tag, you'll add the  &lt;head> tag. The &lt;head> element is a container for all the head elements, those including a title for the document, scripts, cascading style sheets, meta information, and more. Everything you insert inside the &lt;head> tag won't be rendered inside the document.</p>
+                <p>The &lt;title> tag is required in all HTML documents and it defines the title of the document. It defines the title in the browser toolbar, it provides a title for the page when it is added to favorites and it displays a title for the page in search-engine results.</p>
+                <p>All the other tags that can go inside the &lt;head> tag will be covered later in this tutorial.</p>
+                <p>Before starting with all the other tags, you'll need to close the &lt;head> tag, with &lt;/head>, and then open the &lt;body> tag. This tag defines the body of the document, and will contain all the the tags that can and will be rederend in the document, giving a layout to your webpage!</p>
+                <p style="color:blue"><b>&lt;section></b></p>
+            </section>
+                <section id="addingtext" style="border: 2px solid blue; margin: 1px 1px;">
+                <h2>Adding Text</h2>
+                <div>
+                    <h1 style="display:inline">This is h1,</h1>
+                    <h2 style="display:inline">This is h2,</h2>
+                    <h3 style="display:inline">This is h3,</h3>
+                    <h4 style="display:inline">This is h4,</h4>
+                    <h5 style="display:inline">This is h5,</h5>
+                    <h6 style="display:inline">This is h6!</h6>
+                </div>
+                <p>This is a simple paragraph! Use the &lt;p> tag to insert a paragraph in you page. In a paragraph, if you put some enters while writing the code, it will still appear condensed, and only changing line when reaching the border of the page!</p>
+                <p>But if you use the &lt;br> tag than you can break lines <br> wherever <br> you <br> want!<p>
+                <p>You can also use the &lt;hr> tag which stands for horizontal rule, and it's meant to seperate chapters and sections of your website, like so:</p>
+                <p style="color:blue"><b>&lt;section></b></p>
+            </section>
+            <hr><hr>
+            <section id="formattingtext" style="border: 2px solid blue; margin: 1px 1px;">
+                <h2>Formatting Text</h2>
+                <h4>Bold</h4>
+                <p>In this paragraph we have <strong>strong text</strong>, accomplished with the &lt;strong> tag, and <b>bold text</b>, accomplished with the &lt;b> tag! Although they seem similar, they are different. The <strong>difference between strong and bold text</strong> is that strong text will be seen as important text by a SE, but the bold text won't. Because I have "difference between strong and bold text" as strong text the SE would assume my site would talk about this difference and it would show on the SE results if this was searched for!</p>
+                <h4>Italics</h4>
+                <p>You can use the &lt;i> tag <i>to write any text you want in italics,</i> but this italics has no specific meaning. To give a meaning to it you can use:</p>
+                <p>The tag &lt;cite> to show a title of a work, like so: <br> "To be, or not to be, that is the question:...", from <cite>Hamlet</cite>, by William Shakespear</p>
+                <p>Use the &lt;em> tag to describe <em>emphasized text!</em></p>
+                <p>Use the &lt;dfn> tag when you are describing a term, for example: <dfn>SEO</dfn> stands for Search Engine Optimization, and <dfn>SE</dfn> stands for Search Engine!</p>
+                <p>Finally, you can use the tag &lt;address> to write an address or authorship, as in:</p>
+                <address>
+                    Written by DM-Developer for his followers,<br>
+                    Visit my site <a href="https://www.diogomoreira.com">here</a>,<br>
+                    Portugal
+                </address>
+                <h4>Lined</h4>
+                <p>Before I wanted to learn HTML5, but now I'm trully learning it, so if we had a sentence saying: I want to learn HTML5, it now is wrong because we are already learning it. To show this on editted text we can use the &lt;del> tag, that stand for deleted text and the &lt;ins> tag to put inserted text, like so: I <del>want to learn</del><ins>am learning</ins> HTML5.</p>
+                <p>Use the &lt;s> tag to make a text with unvalidated info seems like so: <br><s>I am not on youtube!</s><br> I am on youtube!</p>
+                <h4>Subscript and Supscript</h4>
+                <p>Subscript text is usefull for a lot of things like chemical formulas: H<sub>2</sub>O and C<sub>4</sub>H<sub>10</sub></p>
+                <p>Superscript text is usefull for footnotes and for the power of numbers, for example: "To be, or not to be, that is the question:..."<sup>[1]</sup> or one MB has 2<sup>10</sup> bytes!</p>
+                <h4>Bars</h4>
+                <p>You can express information in other ways, besides words or numbers. For instance to express progress in a questionaire with the &lt;progress> tag:</p>
+                <progress value="25" max="100"></progress>
+                <progress value="50" max="100"></progress>
+                <progress value="75" max="100"></progress>
+                <p>You can use &lt;meter> tag to define a scalar measurement within a known range, or a fractional value.</p> 
+                <meter value="2" min="0" max="10">2 out of 10</meter><br>
+                <meter value="0.6">60%</meter>      
+                <h4>Simulate a program</h4>
+                <p>Use the &lt;kbd> tag to define a keyboard input, use the &lt;code> tag to define code in you text, and use the &lt;samp> tag to define a sample outpu from a computer program, like so:</p>
+                <p><kbd>Keyboard input: 10</kbd> <br>
+                <code>System.out.print(n);</code> <br>
+                <samp>Output: 10</samp></p>
+                </p>
+                <h4>“Quotes”</h4>
+                <p>Use th tag &lt;q> for a short quotation: <q>To be, or not to be, that is the question:...</q>.<br>And use &lt;blockquote> to quote more text from another source:</p>
+                <blockquote cite="Hamlet">To be, or not to be, that is the question: <br>
+                    Whether 'tis nobler in the mind to suffer <br>
+                    The slings and arrows of outrageous fortune, <br>
+                    Or to take arms against a sea of troubles <br>
+                    And by opposing end them. To die—to sleep, <br>
+                    No more; and by a sleep to say we end <br>
+                    The heart-ache and the thousand natural shocks...
+                </blockquote>
+                <h4>Others</h4>
+                <p>Use the &lt;abbr> tag to specify abbreviations, like so: <abbr title="Search Engine Optimiztion">SEO</abbr>.</p>
+                <p></p>
+                <p>Use the &lt;small> tag to write samller text:</p>
+                <p>MyWebsite.com <small>Copyright 2019</small></p>
+                <p>Use the tag &lt;mark> to <mark>mark any text you'd like!</mark></p>
+                <pre>Use the tag &lt;pre> to preserve any  extra    spaces  you have in your code,
+                    or any line breaks you use in your code!
+                    This tag will also change the font of your text, but you can change it later when we learn CSS! 
+                </pre>
+                <p>Finally, you can use the &lt;bdo dir="rlt"> tag with that parameter, bdo standing for Bi-Directional Override to change the current direction of the text: <bdo dir="rtl">This is a reversed sentence.</bdo></p>
+                <p style="color:blue"><b>&lt;section></b></p>
+            </section>
+            <hr><hr>
+            <section id="comments" style="border: 2px solid blue; margin: 1px 1px;">
+                <h2>Comments</h2>
+                <!-- This is a commet! -->
+                <p>The comment tag, &lt;!--  --> is used to insert comments in the source code. Comments are not displayed in the browsers. Comments may also organize your code and make it readable for yourself and your co-workers!</p>
+                <p style="color:blue"><b>&lt;section></b></p>
+            </section>
+            <hr><hr>
+            <article id="semantics" style="border: 2px solid DeepPink; margin: 1px">
+                <header style="border: 2px solid red; margin: 2px;">
+                    <h2>Semantics</h2>
+                    <p>Each tag for Semantics has a determined meaning a use, so be careful when chosing your tags for your layout!</p>
+                    <p style="color:red"><b>&lt;header></b></p>
+                </header>
+                <section style="border: 2px solid blue; margin: 2px;">
+                    <div style="border: 2px solid violet; margin: 2px">
+                        <p>The &lt;header> tag represents a container for introductory content or a set of navigational links, and it usually contains/may contain one or more headings (h1-h6), the logo or icon of the website, and authorship info.</p>
+                        <p>The &lt;main> tag specifies the main content of a document, and it's content should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.</p>
+                        <p style="color: violet"><b>&lt;div></b></p>
+                    </div>
+                    <div style="border: 2px solid violet; margin: 2px">
+                        <p>The &lt;section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document</p>
+                        <p>The &lt;div> tag defines a division or a section in an HTML document. It is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.</p>
+                        <p style="color: violet"><b>&lt;div></b></p>
+                    </div>
+                    <div style="border: 2px solid violet; margin: 2px">
+                        <p>The &lt;article> tag specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.</p>
+                        <p>The &lt;aside> tag defines some content aside from the content it is placed in. The aside content should be related to the surrounding content. </p>
+                        <p style="color: violet"><b>&lt;div></b></p>
+                    </div>
+                    <aside style="border: 2px solid blueviolet; margin: 2px">
+                        <p>The &lt;span> tag is used to group inline-elements in a document. As you may see the header and the main tags occupy the whole width of the screen because they have their display setted to block! While the span tag is the only one that has it's display set to inline! <span  style="border: 2px solid gold;"> The &lt;span> tag provides no visual change by itself.<span style="color: gold"><b>&lt;span></b></span></span></p>
+                        <p style="color: blueviolet"><b>&lt;aside></b></p>
+                    </aside>
+                    <p style="color: blue"><b>&lt;section></b></p>
+                </section>
+                <footer style="border: 2px solid maroon; margin: 2px">
+                    <p>The &lt;footer> tag defines a footer for a document or section, it should contain information about its containing element. Typically it contains: authorship information; copyright information; contact information; sitemap; back to top links; related documents. </p>
+                    <p style="color: maroon"><b>&lt;footer></b></p>
+                </footer>
+                <p style="color: DeepPink"><b>&lt;article></b></p>                
+            </article>
+            <hr><hr>
+            <section id="lists" style="border: 2px solid blue; margin: 2px;">
+                <h2>Lists</h2>
+                <div style="display: flex">
+                    <ul style="margin-right: 10px; margin-left: 10px; border:2px solid black; padding: 10px 40px;">
+                        <h4>Things I need to buy:</h4>
+                        <li>Bread</li>
+                        <li>Milk</li>
+                        <li>Eggs</li>
+                        <li>Tomatoes</li>
+                    </ul>
+                    <ol type="1" style="margin-right: 10px; border:2px solid black; padding: 10px 40px;">
+                        <h4>Top 5 winners of a race:</h4>
+                        <li>William Joseph</li>
+                        <li>Aaron Buck</li>
+                        <li>Lewis Stuart</li>
+                        <li>Ray Gordon</li>
+                        <li>Philip Reese</li>
+                    </ol>
+                    <dl style="border:2px solid black; padding: 10px 40px;">
+                        <h4>Random definitions:</h4>
+                        <dt>Oxidable</dt>
+                        <dd>Capable of being converted into an oxide</dd>
+                        <dt>Whethering</dt>
+                        <dd>The retention of the afterbirth in cows</dd>
+                        <dt>Stackyard</dt>
+                        <dd>A yard or inclosure for stacks of hay or grain</dd>
+                    </dl>
+                </div>
+                <p>Use a &lt;ul> tag to define a unordered list like in the first example! Use a &lt;ol> tag to insert a ordered list! And use a &lt;dl> tag to add a definitions list! <br>
+                Use the tag &lt;li> inside &lt;ul> and &lt;ol> tags to define new list itens! And use a &lt;dt> tag to define a term, and a &lt;dd> to define a definition, inside the &lt;dl> tags!</p>                           
+                <p style="color: blue"><b>&lt;section></b></p>
+            </section>
+            <hr><hr>
+            <section id="tables" style="border: 2px solid blue; margin: 2px;">
+                <h2>Tables</h2>
+                <div style="display: flex">
+                    <table border="1">
+                        <caption>Vacations Balance</caption>
+                        <colgroup>
+                        <col span="2">
+                        <col span="2" style="background:yellow">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Month</th>
+                                <th>Place</th>
+                                <th>Trips</th>
+                                <th>Meals</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>July</td>
+                                <td rowspan="2">Portugal</td>
+                                <td colspan="2">50€</td>
+                            </tr>
+                            <tr>
+                                <td>August</td>
+                                <td>50€</td>
+                                <td>80€</td>
+                            </tr>
+                            <tr>
+                                <td>August</td>
+                                <td>Spain</td>
+                                <td>80€</td>
+                                <td>150€</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Total Balance:</td>
+                                <td>410€</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <p style="margin-left: 10px">Use the tag &lt;table> to insert a table in your page! <br>
+                    Use &lt;thead>, &lt;tbody> and &lt;tfoot> to define the header, the body and the footer of you table, respectively. <br>
+                    Use the &lt;tr> tag to add new table rows on your table! <br>
+                    Use &lt;th> to add the headings of your table inside the first &lt;tr> tag in your table. <br>
+                    And finally, use the tag &lt;td> to add standard cells to your table in the rest of your table rows.</p>
+                </div>              
+                <p style="color: blue"><b>&lt;section></b></p>
+            </section>
+            <hr><hr>
+            <section id="images" style="border: 2px solid blue; margin: 2px;">
+                <h2>Images</h2>
+                <p>Use the &lt;img> tag to add images to your page. Add a src parameter to the tag to give it a path for you image. Add a alt parameter to, if your clients iinternet is slow for example, have an idea of what the image is! Both this parameters are required for the &lt;img> tag! <br> For example, if you add a wrong path to the src parameter the name in the alt parameter will be seen!</p>
+                <img src="resources/logo.png" alt="Logo" width="200" height="200">
+                <img src="resources/logo.jpg" alt="Logo" width="200" height="200">
+                <p>Use &lt;figure> tag to add figures. Inside this tag you'll have &lt;img> tag, with the image you want in your page and you can add a tag &lt;figcaption> to add a caption to your figure!</p>
+                <figure>
+                    <img src="resources/logo.png" alt="Logo" width="200" height="200"> 
+                    <figcaption>Fig.1 - Logo from DM-Developer.</figcaption>
+                </figure>
+                <p>Use the tag &lt;svg> to add SVG graphics to your page! Like so:</p>
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="4" fill="red"/>
+                </svg>
+                <aside style="border: 2px solid blueviolet; margin: 2px">
+                    <p>I didn't have good examples and these tags are rarely used, but if you wanna know more check this website: the <a href="https://www.w3schools.com/tags/tag_map.asp">&lt;map></a> tag and <a href="https://www.w3schools.com/tags/tag_picture.asp">&lt;picture></a> tag!</p>
+                    <p style="color: blueviolet"><b>&lt;aside></b></p>
+                </aside>
+                <p style="color: blue"><b>&lt;section></b></p>
+            </section>
+            <hr><hr>
+            <section id="audioandvideo" style="border: 2px solid blue; margin: 2px;">
+                <h2>Audio and Video</h2>
+                <p>To add audio to your page use the &lt;audio> tag! Insert the src parameter to give the path of your audio to this tag. Add the param controls to the tag so the visitor of your web page can control the audio. Use the parameter loop to restart the audio as soon as it ends. Try to use the type of mp3 for the audio, because it is the only one accepted by all the browsers!</p>
+                <audio src="resources/sample.mp3" controls loop></audio>
+                <p>To add a video to your page use the &lt;video> tag! Insert the src parameter to give the path of your video to this tag. Add the param controls to the tag so the visitor of your web page can control the video. Use the parameter loop to restart the video as soon as it ends. Try to use the type of mp4 for the video, because it is the only one accepted by all the browsers! Feel free to also add the width and height parameters to give a size to your video, in case the default size of your video isn't ok.</p>
+                <video width="320" height="240" src="resources/intro.mp4" controls loop></video>
+                <p style="color: blue"><b>&lt;section></b></p>
+            </section>
+            <hr><hr>
+            <section id="links" style="border: 2px solid blue; margin: 2px;">
+                <h2>Links</h2>
+                <p>The &lt;a> tag defines a hyperlink, which is used to link from one page to another, that page can be outside your website or another page from your website. The most important attribute of the &lt;a> element is the href attribute, which indicates the link's destination. For instance if you have a page for contacts, named contacts.html, you can link that page putting that name inside the href parameter. You can also add the parameter target and inside it write "_blank", that will make the browser open a new tab when oppening the link, leaving your website openned!</p>
+                <a href="https://www.youtube.com/channel/UCLdpYjCW40qUPBalDGyDPHg" target="_blank">Visit my Youtube Channel</a>
+                <p>The &lt;nav> tag defines a set of navigation links. The &lt;nav> element is intended only for major block of navigation links. Like so:</p>
+                <nav>
+                    <a href="https://www.youtube.com/channel/UCLdpYjCW40qUPBalDGyDPHg">My Youtube Channel</a> |                  
+                    <a href="https://www.facebook.com">Facebook</a> |
+                    <a href="https://www.instagram.com">Instagram</a> |
+                    <a href="https://www.twitter.com">Twitter</a>
+                </nav>
+                <p style="color: blue"><b>&lt;section></b></p>
+            </section>
+            <hr><hr>
+            <section id="forms" style="border: 2px solid blue; margin: 2px;">
+                <h2>Forms</h2>
+                <p>The &lt;form> tag is used to create an HTML form for a user input. The form will call a PHP action, or some other action and it will usually interact with the database of your website, but thats for another tutorial! The &lt;input> tag specifies an input field where the user can enter data. &lt;input> tags are used within a &lt;form> tag to declare input controls that allow users to input data. There are a lot of input types, you can check them out yourself, just add the parameter type and try these: button, checkbox, color, date, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, search, submit, tel, text, time, url, week. If you input is for text you can add the parameter placeholder like in Username.</p>
+                <form action="" method="get">
+                    Username <input type="text" name="fname" placeholder="ex. dm-developer"><br><br>
+                    Password <input type="password" name="lname"><br><br>
+                    <input type="submit" value="Submit" >
+                </form>
+                <p>If there is a lot of text to be added, instead of a input type text, you can use the &lt;textarea> tag. You can add the parameters rows and cols to give a size to the textarea.</p>
+                <textarea rows="4" cols="50" placeholder="You can also add a placeholder using the same method mentioned before!"></textarea>
+                <p>The &lt;button> tag defines a clickable button. Inside a &lt;button> element you can put content, like text or images. This is the difference between this element and buttons created with the &lt;input> element.</p>
+                <button type="button">Click Me! I do absolutely nothing!</button>
+                <p>Use the tag &lt;select> to create a drop-down list from where to chose. Use the tag &lt;option> to add options to your drop-down list.</p>
+                <select>
+                    <option value="HP">HP</option>
+                    <option value="Asus">Asus</option>
+                    <option value="Acer">Acer</option>
+                    <option value="Dell">Dell</option>
+                </select>
+                <p>If you have a lot of options and want to discriminate the options, use the &lt;optgroup> tag to add groups of options. Use the parameter label to give your group of options a name!</p>
+                  <select>
+                    <optgroup label="Drinks">
+                      <option value="Water">Water</option>
+                      <option value="Orange juice">Orange juice</option>
+                      <option value="Lemonade">Lemonade</option>
+                    </optgroup>
+                    <optgroup label="Food">
+                      <option value="Pasta">Pasta</option>
+                      <option value="Meat">Meat</option>
+                      <option value="Vegan">Vegan</option>
+                    </optgroup>
+                  </select>
+                  <p>Use the &lt;label> tag to label your inputs, like the following example. You can label a &lt;button>, &lt;input>, &lt;meter>, &lt;output>, &lt;progress>, &lt;select>, or &lt;textarea> element.</p>
+                <form action="">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male"><br>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female"><br>
+                    <label for="other">Other</label>
+                    <input type="radio" name="gender" id="other" value="other"><br>
+                </form>
+                <p>You can use a &lt;fieldset> tag inside a form to create an area of related elements of the form inside the form. You can also add the &lt;legend> tag to give you fildeset a title.</p>
+                <form>
+                    <fieldset>
+                        <legend>Personalia:</legend>
+                        Name: <input type="text"><br><br>
+                        Email: <input type="text"><br><br>
+                        Date of birth: <input type="text">
+                    </fieldset>
+                </form>
+                <p>Use a &lt;input> tag with the parameter list with a name, and then create a tag name &lt;datalist> with a parameter id with the same name. Inside the datalist you can add various options to get a input with options to autocomplete.</p>
+                <input list="pcbrands">
+                <datalist id="pcbrands">
+                    <option value="HP">HP</option>
+                    <option value="Asus">Asus</option>
+                    <option value="Acer">Acer</option>
+                    <option value="Dell">Dell</option>
+                </datalist>
+                <p>The &lt;output> tag represents the result of a calculation (like one performed by a script).</p>
+                <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                    <input type="number" id="a" value="50">
+                    +<input type="number" id="b" value="50">
+                    = <output name="x" for="a b"></output>
+                </form>
+                <aside style="border: 2px solid blueviolet; margin: 2px">
+                    <p>I didn't have good examples and this tag is rarely used, but if you wanna know more check this website: the <a href="https://www.w3schools.com/tags/tag_output.asp">&lt;output></a> tag!</p>                      
+                    <p style="color: blueviolet"><b>&lt;aside></b></p>
+                </aside>
+                <p style="color: blue"><b>&lt;section></b></p>
+            </section>
+            <hr><hr>
+            <section id="frames" style="border: 2px solid blue; margin: 2px;">
+                <h2>Frames</h2>
+                <p>The &lt;iframe> tag specifies an inline frame that can be used to embed another document within the current HTML document or website, and you give the HTML document or website path in the src parameter.</p>
+                <iframe src="https://www.diogomoreira.me" width="500px" height="400px"></iframe>
+                <p>You can also add videos from other websites, for example youtube. Just go to any video on youtube and on the share button chose embed, and you'll get the embed code for that video, than just add the code onto your page. That code will usually be an &lt;iframe> tag.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/q9UfAGwLNGc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p style="color: blue"><b>&lt;section></b></p>
+            </section>
+            <section id="style" style="border: 2px solid blue; margin: 2px;">
+                <h2>Style</h2>
+                <p>There is a tag named &lt;style> that you can add anywhere inside the &lt;body> tag on your html code. Inside that tag you can add any <abbr title="Cascading Style Sheet">CSS</abbr> code you'd like. But CSS will be covered on the next tutorial so I won't be getting in any details in this tutorial, besides what we already used.</p>
+                <p style="color: blue"><b>&lt;section></b></p>
+            </section>
+            <section id="programming" style="border: 2px solid blue; margin: 2px;">
+                <h2>Programming</h2>
+                <p>There's a tag &lt;script> that you can add anywhere inside the &lt;body> tag on your html code. Inside that tag you can add any client-side script in JavaScript. But that will also be covered in a future tutorial so I won't be getting in any details in this tutorial. You can also add a parameter src to, instead of writing JavaScript inside your HTML code, adding a .js file, and if you do so you can add that tag to the &lt;head> too.</p>
+                <p>The &lt;noscript> tag defines an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support script. This tag can be used in both inside the &lt;head> tags and &lt;body> tags. When used inside the &lt;head> element: &lt;noscript> must contain only &lt;link>, &lt;style>, and &lt;meta> elements. The content inside the &lt;noscript> element will be displayed if scripts are not supported, or are disabled in the user's browser</p>
+                <p>The &lt;link> tag defines a link between a document and an external resource. The &lt;link> tag is commonly used to link to external .css files, and it is usually place inside the &lt;head> tag.</p>
+                <p>Finally, there is the &lt;meta> tag that provides metada to you website. <dfn>Metadata</dfn> is data (information) about data. Metadata will not be displayed on the page once it is normally within the &lt;head> tag. Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata. The metadata can be used by browsers (how to display content or reload page), search engines (keywords), or other web services. The tags are usually are like this:
+                &lt;meta charset="UTF-8"> this line defines the charcterset for your webpage; <br>
+                &lt;meta name="description" content="Free Web tutorials"> this line gives a description about your website; <br>
+                &lt;meta name="keywords" content="HTML,CSS,XML,JavaScript"> this line gives some keywords to your website; <br>
+                &lt;meta name="author" content="John Doe"> this line gives authorship to the website; <br>
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"> and this line gives instructionsto the browser on how to control the page's dimensions and scaling.</p>
+                <aside style="border: 2px solid blueviolet; margin: 2px">
+                    <p>I didn't have good examples and these tags are rarely used, but if you wanna know more check this website: the <a href="https://www.w3schools.com/tags/tag_base.asp">&lt;base></a> tag and <a href="https://www.w3schools.com/tags/tag_object.asp">&lt;object></a> tag!</p>
+                    <p style="color: blueviolet"><b>&lt;aside></b></p>
+                </aside>
+                <p style="color: blue"><b>&lt;section></b></p>
+            </section>
+            <p style="color: greenyellow"><b>&lt;main></b></p>
+        </main>
+        <footer style="border: 2px solid maroon; margin-top: 1px;">
+            <address>
+                Written by DM-Developer for his followers,<br>
+                Visit my site <a href="https://www.diogomoreira.com">here</a> <br>
+            </address>
+            <p><strong>DM-Developer &copy; 2019</strong></p>
+            <p style="color: maroon"><b>&lt;footer></b></p>
+        </footer>
+    </body>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</html>
